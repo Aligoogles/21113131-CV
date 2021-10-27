@@ -6,21 +6,34 @@ body {
     text-align:center;
 }
 
-.column-2 {
+.rows {
     background-color: #bba907;
-    height: 150%;
-    width: 100%;
+    justify-content: space-between;
 }
 
-.main-container {
+
+.main-container-skills {
     display: flex;
     justify-content: center;
     height: 600px; 
-    flex-wrap: wrap;  
+    flex-wrap: wrap; 
+
 }
 
+.main-container-cv {
+    display: flex;
+    justify-content: center;
+    height: 600px; 
+    flex-wrap: wrap; 
+
+}
 
 .column-1 {
+    background-color: #bba907;
+    width: 30%; 
+}
+
+.column-skills {
     background-color: #bba907;
     width: 30%; 
 }
@@ -34,7 +47,24 @@ body {
     
 }
 
+.box-exp {
+    flex-basis: 15%;
+    height: 600px;
+    background-color:#dddcdc;
+    flex: 1 1 300px;
+    padding: 60px 20px;
+    
+}
+
 .box-2 {
+    width: 200px;
+    height: 600px;
+    background-color:#dddcdc;
+    flex: 1 1 300px;
+    padding: 60px 20px;   
+}
+
+.box-ed {
     width: 200px;
     height: 600px;
     background-color:#dddcdc;
@@ -60,7 +90,13 @@ img {
 }
 
 @media(max-width: 1000px){
-    .main-container {
+
+    .rows {
+        background-color: #bba907;
+        justify-content: space-between;
+    }
+
+    .main-container-skills {
         display: flex;
         justify-content: center;
         height: 600px; 
@@ -72,8 +108,22 @@ img {
         background-color: #bba907;
         width: 100%; 
     }
+
+    .column-skills {
+        background-color: #bba907;
+        width: 100%; 
+    }
     
     .box-1 {
+        width: 50%;
+        height: 600px;
+        background-color:#dddcdc;
+        flex: 1 1 100px;
+        padding: 20px 2px;
+        
+    }
+
+    .box-exp {
         width: 50%;
         height: 600px;
         background-color:#dddcdc;
@@ -88,6 +138,14 @@ img {
         background-color:#dddcdc;
         flex: 1 1 100px;
         padding: 20px 2px;   
+    }
+
+    .box-ed {
+        width: 200px;
+        height: 600px;
+        background-color:#dddcdc;
+        flex: 1 1 300px;
+        padding: 60px 20px;   
     }
     
     .footer {
@@ -115,13 +173,10 @@ img {
 
 
 @media(max-width: 786px){
-    .main-container {
-        display: flex;
-        justify-content: center;
-        height: 600px; 
-        flex-wrap: wrap; 
+    .rows {
+        background-color: #bba907;
+        justify-content: space-between;
     }
-    
     
     .column-1 {
         background-color: #bba907;
@@ -165,8 +220,6 @@ img {
         font-size: 8px;
         margin: 3px;
     }
-    
-
 }
 
 
